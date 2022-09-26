@@ -1,0 +1,19 @@
+$darker: #937DC2
+$lighter: #C689C6
+$lighter-transparent: #c689c679
+$white: #FFE6F7
+$grey: #2b2823
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap')
+
+@mixin margin($number, $boolean: false)
+    
+    @if $boolean
+         margin: 
+            left: auto
+            right: auto
+    @else 
+        margin: $number 0 $number 0
+
+body
+    color: $grey

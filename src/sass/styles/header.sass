@@ -1,0 +1,105 @@
+$black: #b908ff15
+@import variables
+.header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding-top: 2%
+    background: $black
+    max-width: 100vw
+    padding-bottom: 1.3rem
+    margin-top: 1rem
+    &__logo
+        margin: 0
+        width: auto
+        margin-left: 2rem
+        font-size: 2.6rem
+    &__ul
+        margin: 0
+        display: flex
+        list-style-type: none
+        width: auto
+        padding-inline-start: 0
+    &__element
+        margin: 0
+        display: none
+        padding: 1.5rem 0 1.5rem 0
+        background: $lighter-transparent
+        width: 11vw
+        border: none
+        margin:
+            left: 2rem
+            right: 2rem
+        border-radius: 100vw
+        font-size: 1.4rem
+        color: $grey
+    &__burger
+        transition: 2s
+        position: relative
+        width: fit-content
+        height: fit-content
+    &__span10
+        transform: translateY(16px) rotate(45deg)
+    &__span20
+        transform: translateY(0px) rotate(-45deg)
+    &__span30
+        opacity: 0
+    &__div
+        transition: .5s
+        width:  48px
+        display: block
+        height: 3px
+        margin: 13px 0 13px 0
+        background: black
+    .header__burger
+        margin-right: 2rem
+.calendar
+    margin:
+        right: 1rem
+    border: none
+    border-radius: 2rem
+    padding: .5rem
+    font-size: 1rem
+    text-align: center
+    font-family: 'Poppins', sans-serif
+    font-weight: 600
+
+.header__open
+    transition: 2s
+    width: 100%
+    height: 100vh
+    background: $white
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    gap: 7rem
+    animation: mymove 5s infinite
+.header
+    transition: .4s
+    padding: 0
+    background: $white
+.open__element
+    transition: .4s
+    padding: 2rem
+    border: none
+    width: 12rem
+    border-radius: 7rem
+    background: $lighter
+    font-size: 1.5rem
+    color: $grey
+.header__logo--none
+    transition: .4s
+    display: none
+.open--none
+    display: none
+.android
+    display: flex
+    width: 100vw
+    justify-content: space-between
+.open__disable 
+    display: none
+    transition: .4s
+.open
+    transition: 2s
+    opacity: 0

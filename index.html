@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="dist/css-local/styles/style.css">
+</head>
+<body>
+    <article class="header">
+        <div class="open open--none">
+            <button class="open__element">Home</button>
+            <button class="open__element">Book</button>
+        </div>
+        <div class="open__dis android">
+        <h1 class="header__logo" >SCHOOL</h1>
+        <ul class="header__ul">
+            <div class="header__burger">
+                <div class="header__div header__span1"></div>
+                <div class="header__div header__span2"></div>
+                <div class="header__div header__span3"></div>
+            </div>
+                <div class="header__ul">
+                <button class="header__element">Home</button>
+                <button class="header__element">Book</button>
+
+        </ul>
+        </div>
+    </article>
+    <article class="content">
+        <section class="content__main-form">
+            <div class="content__texts">
+                <h1 class="content__first-text">Hey There Kid!</h1>
+                <h2 class="content__second-text">Tell us a little more about you!</h2>
+                </div>
+            <form class="content__form">
+                <span>
+                    <label class="content__label" for="name">My name is</label>
+                    <input class="content__input" type="text" name="name" id="name">.
+                    <br>
+                </span>
+                <span>
+                    <label class="content__label" for="studing"> I am studing in</label>
+                    <input class="content__input" type="text" name="study" id="study">
+                    <label class="content__label" for="studing">school.</label>
+                    <br>
+                </span>
+                <span>
+                    <label class="content__label content__input--study" for="studing"> I am looking for help with</label>
+                    <input class="content__input content__input--whats" type="text" name="whats-help" id="help">
+                    <label class="content__label" >subject. </label>
+                    <br>
+                </span>
+                <span>
+                    <label class="content__label" >I need help with topic</label>
+                    <input class="content__input" type="text" name="topic" id="topic">.
+                    <br>
+                </span>
+                <span>
+                    <label class="content__label"  for="thanks">Thank for your time :)</label>
+                    <br>
+                    <br>
+                    <label class="content__label"  for="sinclery">Yours sincerely,</label>
+                    <br>
+                    <input class="content__input content__input--since" type="text" name="last-name" id="last-name">
+                    <br>
+                </span>
+                <button type="button" class="content__accept-button">Send it!</button>
+            </form>
+        </section>
+        <section class="content__selector">
+            <h1 class="content__title-book">Book session with teacher</h1>
+            <h2 class="content__title-chose">Chose Date and Time</h2>
+            <section class="content__first-book">
+                <h2 class="content__text-date"></h2>
+                <div class="content__buttons">
+                    <button class="content__hour1 content__button--circle">9:30</button>
+                    <button class="content__hour2 content__button--circle">12:00</button>
+                    <button class="content__hour3 content__button--circle">15:00</button>
+                    <button class="content__hour4 content__button--circle">18:00</button>
+                </div>
+            </section>
+            <section class="content__second-book">
+                <h2 class="content__text-date">e</h2>
+                <div class="content__buttons content__buttons--second">
+                    <button class="content__hour5 content__button--circle">9:30</button>
+                    <button class="content__hour6 content__button--circle">12:00</button>
+                </div>
+            </section>
+            <p class="content__calender">
+                <input class="calendar" type="date" data-date-inline-picker="true" />
+                Book using calender</p>
+            <h1 class="content__book-now-btn">Book now</h1>
+        </section>
+    </article>
+    <footer>
+        <h1 class="footer__text">Hazen-dev 2022</h1>
+    </footer>
+    <script src="/dist/js/main.bundle.js"></script>
+</body>
+</html>

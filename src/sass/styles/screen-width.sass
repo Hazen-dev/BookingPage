@@ -1,0 +1,60 @@
+// PHONE MEDIA
+@media screen and (max-width: 420px)
+    body
+        margin: 0
+        max-width: 100vw
+    .header__burger
+        margin-right: 7vw
+        padding-inline-start: 0
+    .content
+        max-width: 100vw
+        &__first-text
+            font-size: 2rem
+            margin: 0
+        &__second-text
+            margin: 0
+            font-size: 1.3rem
+            width: 60%
+        &__calender
+            width: 90%
+    .calendar
+        font-size: .8rem
+// FOR PC
+@media (min-width: 1025px) //and (max-width: 1280px)
+    .header
+        &__element
+            display: block
+        &__burger
+            display: none
+    .content
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        grid-template-rows: 1fr
+        &__main-form
+            width: 85%
+            justify-self: center
+        &__first-text
+            width: 85%
+            font-size: 2rem
+            margin: 0
+        &__second-text
+            width: 85%
+            font-size: 1.7rem
+            margin: 0 0 2rem 0
+        &__selector
+            margin: 2.5rem 0 2.5rem 0
+        &__accept-button
+            display: none
+    .android
+        margin-top: 2rem
+    .header__ul
+        margin-left: auto
+// FOR BIG PC
+@media (min-width: 1540px)
+    .content
+        &__selector
+            max-width: 70%
+// FOR HIGHER PC
+@media (min-height: 967px)
+    footer
+        height: 15vh
